@@ -106,16 +106,16 @@ class java::params {
         'java_home'        => '/usr/lib/jvm/java-6-sun/jre/',
       }
       $debian_oracle_jdk7 = {
-        'package'          => 'oracle-j2sdk1.7',
-        'alternative'      => 'j2sdk1.7-oracle',
-        'alternative_path' => '/usr/lib/jvm/j2sdk1.7-oracle/jre/bin/java',
-        'java_home'        => '/usr/lib/jvm/j2sdk1.7-oracle/jre/',
+        'package'          => 'oracle-java7-jdk',
+        'alternative'      => "jdk-7-oracle-${debian_oracle_java_architecture}",
+        'alternative_path' => "/usr/lib/jvm/jdk-7-oracle-${debian_oracle_java_architecture}/jre/bin/java",
+        'java_home'        => "/usr/lib/jvm/jdk-7-oracle-${debian_oracle_java_architecture}/jre/",
       }
       $debian_oracle_jre7 = {
-        'package'          => 'oracle-j2re1.7',
-        'alternative'      => 'j2re1.7-oracle',
-        'alternative_path' => '/usr/lib/jvm/j2re1.7-oracle/bin/java',
-        'java_home'        => '/usr/lib/jvm/j2re1.7-oracle/',
+        'package'          => 'oracle-java7-jre',
+        'alternative'      => "jre-7-oracle-${debian_oracle_java_architecture}",
+        'alternative_path' => "/usr/lib/jvm/jre-7-oracle-${debian_oracle_java_architecture}/bin/java",
+        'java_home'        => "/usr/lib/jvm/jre-7-oracle-${debian_oracle_java_architecture}/",
       }
       $debian_oracle_jdk8 = {
         'package'          => 'oracle-java8-jdk',
