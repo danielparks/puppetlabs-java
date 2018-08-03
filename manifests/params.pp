@@ -157,10 +157,12 @@ class java::params {
         }
         'stretch', 'vivid', 'wily', 'xenial', 'yakkety', 'zesty', 'artful', 'bionic': {
           $java =  {
-            'jdk'  => $debian_jdk8,
-            'jre'  => $debian_jre8,
-            'jdk8' => $debian_jdk8,
-            'jre8' => $debian_jre8,
+            'jdk'         => $debian_jdk8,
+            'jre'         => $debian_jre8,
+            'jdk8'        => $debian_jdk8,
+            'jre8'        => $debian_jre8,
+            'oracle-jdk8' => $debian_oracle_jdk8,
+            'oracle-jre8' => $debian_oracle_jre8,
           }
         }
         default: { fail("unsupported release ${::lsbdistcodename}") }
